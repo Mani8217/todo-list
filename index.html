@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
         header {
             text-align: center;
             margin: 0 auto;
-            width: 500px;
+          
             color: green;
             border: 2px outset gray;
             background-color: gray;
@@ -17,30 +24,31 @@
         }
         main{
             text-align: center;
-            margin: 0 auto;
-            width: 500px;
             border: 1px solid gray;
-           
-            min-height: 300px;
+            min-height: 500px;
             background-image: url(https://img.freepik.com/free-vector/businesswoman-cartoon-character-making-presentations_1284-44025.jpg?w=2000);
             background-repeat: no-repeat;
-            background-size: 100px;
+            background-size: 200px;
             background-attachment: fixed;
-            background-position:70px   ;
+            background-position:30px 200px ;
            
         }
+        
        form input{
         border:2px solid green;
+       
        }
        form #submit {
         background-color: green;
         color: white;
        }
        ul{
-        background-color: #f1f1f1;
-        width: 200px;
+        background-color: white;
+        width: 400px;
         margin: 20px auto;
-        list-style-type: number;
+        list-style-type:none;
+        
+        
        }
        ul li:nth-child(even){
         border-bottom: 1px solid black;
@@ -60,14 +68,15 @@
        }
        footer{
         text-align: center;
-        width: 462px;
-        margin: 0 auto;
+        
+      
         background-color:gray;
         color: white;
         padding: 20px;
         font-size: 22px;
         border: 1px solid gray;
        }
+       
       
     </style>
 </head>
@@ -79,7 +88,7 @@
     <ul id="tasks"></ul>
     <form action="">
         <input type="text" placeholder="New Task" id="task">
-        <input type="submit" id="submit">
+        <input type="submit" id="submit" value="Add a task">
     </form>
     </main>
     <footer>
